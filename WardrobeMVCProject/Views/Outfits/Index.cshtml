@@ -1,0 +1,21 @@
+﻿@model IEnumerable<WardrobeMVCProject.Models.Outfit>
+
+@{
+    ViewBag.Title = "Premade Soldiers";
+}
+
+<h2>Welcome to the Emporium.</h2>
+<hr />
+
+    
+
+
+<h4>Click <i><b>@Html.ActionLink("here", "Create")</b></i> to enlist a new soldier to our wonderful military.</h4>
+<h5><i>Otherwise, please choose from below to see examples of our selection of the worlds finest fighting machines.</i></h5>
+
+<hr />
+@foreach (var item in Model)
+{
+    <h5><i>@Html.DisplayFor(modelItem => item.OutfitName)</i></h5>
+    @Html.ActionLink("Click for More Details", "Details", new { id = item.BottomsID }, new { @class = "btn btn-primary btn-large" })
+}

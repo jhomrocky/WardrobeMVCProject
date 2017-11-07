@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WardrobeMVCProject.Models.Season>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@Html.DisplayNameFor(model => model.SeasonName)
+
+@foreach (var item in Model)
+{
+    <p>
+        @Html.DisplayFor(modelItem => item.SeasonName)
+
+        @Html.ActionLink("Edit", "Edit", new { id = item.SeasonID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.SeasonID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.SeasonID })
+    </p>
+}
+

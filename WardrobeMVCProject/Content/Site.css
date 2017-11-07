@@ -1,0 +1,219 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: black;
+    color: white;
+    background-size: 100% auto;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+a {
+    color: white;
+}
+
+/*Home tab*/
+body > div.navbar.navbar-inverse.navbar-fixed-top > div > div.navbar-collapse.collapse > ul > li:nth-child(1) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*href tag above "home"*/
+body > div.navbar.navbar-inverse.navbar-fixed-top > div > div.navbar-collapse.collapse > ul > li:nth-child(1) > a:nth-child(1) {
+    padding: 0 0 0 0;
+}
+
+/*Outfits dropdown*/
+body > div.navbar.navbar-inverse.navbar-fixed-top > div > div.navbar-collapse.collapse > ul > li:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Clothes dropdown*/
+body > div.navbar.navbar-inverse.navbar-fixed-top > div > div.navbar-collapse.collapse > ul > li:nth-child(3) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Home Page Carousel*/
+
+#homeCarousel {
+    height: 600px;
+    align-content: center;
+    text-align: center;
+}
+
+/*Carousel image resizing*/
+#homeCarousel > div > div:nth-child(1) > img {
+    height: 600px;
+    margin: 0 auto;
+}
+
+#homeCarousel > div > div:nth-child(2) > img {
+    height: 600px;
+    margin: 0 auto;
+}
+
+#homeCarousel > div > div:nth-child(3) > img {
+    height: 600px;
+    margin: 0 auto;
+}
+
+/*Jumbotron under carousel*/
+body > .body-content > .jumboUnderCarousel {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: grey;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+body > .body-content > .thumbsUnderJumbo {
+    margin-top: 20px;
+    height: 200px;
+}
+body > div.container.body-content > div.row.thumbsUnderJumbo > div:nth-child(1) > img {
+    height: 200px;
+    width: 200px;
+}
+
+body > div.container.body-content > div.row.thumbsUnderJumbo > div:nth-child(2) > img {
+    height: 200px;
+    width: 200px;
+}
+
+body > div.container.body-content > div.row.thumbsUnderJumbo > div:nth-child(3) > img {
+    height: 200px;
+    width: 200px;
+}
+
+body > div.container.body-content > div.row.thumbsUnderJumbo > div:nth-child(4) > img {
+    height: 200px;
+    width: 200px;
+}
+
+/*Outfits and top/bottom/accessory/shoe rows*/
+body > .body-content > .accessoriesDetailRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+body > .body-content > .accessoriesIndexRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+body > .body-content > .bottomsDetailRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+body > .body-content > .bottomsIndexRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+body > .body-content > .topRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+body > .body-content > .bottomRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+body > .body-content > .accessoryRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+body > .body-content > .shoeRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+body > .body-content > .topsDetailRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+body > .body-content > .topsIndexRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+body > .body-content > .shoesDetailRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+body > .body-content > .shoesIndexRow {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+/*Details/Index picture resizing, border removal and background color to match theme*/
+body > .container.body-content > div > div:nth-child(2) > div {
+    background-color: black;
+    border: none;
+}
+
+body > .container.body-content > div > div:nth-child(2) > div > img {
+    height: 200px;
+    width: auto;
+}

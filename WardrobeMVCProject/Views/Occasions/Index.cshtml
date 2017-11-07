@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WardrobeMVCProject.Models.Occasion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@Html.DisplayNameFor(model => model.OccasionName)
+
+@foreach (var item in Model)
+{
+    <p>
+        @Html.DisplayFor(modelItem => item.OccasionName)
+
+        @Html.ActionLink("Edit", "Edit", new { id = item.OccasionID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.OccasionID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.OccasionID })
+    </p>
+}

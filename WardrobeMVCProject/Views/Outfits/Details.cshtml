@@ -1,0 +1,81 @@
+﻿@model WardrobeMVCProject.Models.Outfit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<h4>Outfit</h4>
+<hr />
+
+@*Accessory/headgear display code*@
+<div class="row container accessoryRow">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <h5>@Html.DisplayNameFor(model => model.Accessory.AccessoriesName): @Html.DisplayFor(model => model.Accessory.AccessoriesName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Accessory.AccessoriesType): @Html.DisplayFor(model => model.Accessory.AccessoriesType)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Accessory.Color.ColorName): @Html.DisplayFor(model => model.Accessory.Color.ColorName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Accessory.Occasion.OccasionName) @Html.DisplayFor(model => model.Accessory.Occasion.OccasionName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Accessory.Season.SeasonName) @Html.DisplayFor(model => model.Accessory.Season.SeasonName)</h5>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="thumbnail accessoryThumb">
+            <img src="@Html.DisplayFor(model => model.Accessory.AccessoriesPhoto)" />"
+        </div>
+    </div>
+</div>
+@*Top display code*@
+<div class="row container topRow">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <h5>@Html.DisplayNameFor(model => model.Top.TopsName): @Html.DisplayFor(model => model.Top.TopsName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Top.TopsType): @Html.DisplayFor(model => model.Top.TopsType)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Top.Color.ColorName): @Html.DisplayFor(model => model.Top.Color.ColorName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Top.Occasion.OccasionName) @Html.DisplayFor(model => model.Top.Occasion.OccasionName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Top.Season.SeasonName) @Html.DisplayFor(model => model.Top.Season.SeasonName)</h5>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="thumbnail topThumb">
+            <img src="@Html.DisplayFor(model => model.Top.TopsPhoto)" />
+        </div>
+    </div>
+</div>
+
+@*Bottom display code*@
+<div class="row container bottomRow">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <h5>@Html.DisplayNameFor(model => model.Bottom.BottomsName): @Html.DisplayFor(model => model.Bottom.BottomsName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Bottom.BottomsType): @Html.DisplayFor(model => model.Bottom.BottomsType)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Bottom.Color.ColorName): @Html.DisplayFor(model => model.Bottom.Color.ColorName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Bottom.Occasion.OccasionName) @Html.DisplayFor(model => model.Bottom.Occasion.OccasionName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Bottom.Season.SeasonName) @Html.DisplayFor(model => model.Bottom.Season.SeasonName)</h5>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="thumbnail bottomThumb">
+            <img src="@Html.DisplayFor(model => model.Bottom.BottomsPhoto)" />
+        </div>
+    </div>
+</div>
+
+@*Shoe display code*@
+<div class="row container shoeRow">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <h5>@Html.DisplayNameFor(model => model.Sho.ShoesName): @Html.DisplayFor(model => model.Sho.ShoesName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Sho.ShoesType): @Html.DisplayFor(model => model.Sho.ShoesType)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Sho.Color.ColorName): @Html.DisplayFor(model => model.Sho.Color.ColorName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Sho.Occasion.OccasionName) @Html.DisplayFor(model => model.Sho.Occasion.OccasionName)</h5>
+        <h5>@Html.DisplayNameFor(model => model.Sho.Season.SeasonName) @Html.DisplayFor(model => model.Sho.Season.SeasonName)</h5>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="thumbnail shoeThumb">
+            <img src="@Html.DisplayFor(model => model.Sho.ShoesPhoto)" />
+        </div>
+    </div>
+</div>
+
+
+<h5><b><i>That's one fine soldier you made there. Good work.</i></b></h5>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
+    @Html.ActionLink("Details", "Details", new { id = Model.OutfitID }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.OutfitID })
+</p>
